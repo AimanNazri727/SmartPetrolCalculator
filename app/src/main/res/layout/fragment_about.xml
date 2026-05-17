@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F2F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER dengan gradient biru -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            android:background="#003087"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp">
+
+            <!-- Icon App -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:cardCornerRadius="22dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#CC0001">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/logo_budi_madani"
+                        android:scaleType="fitCenter" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Smart Petrol Calculator"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="with BUDI MADANI Subsidy"
+                android:textColor="#FFD100"
+                android:textSize="12sp" />
+
+            <!-- Version pill -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#33FFFFFF"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Version 1.0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Stripe -->
+        <View android:layout_width="match_parent" android:layout_height="5dp" android:background="#FFD100" />
+        <View android:layout_width="match_parent" android:layout_height="3dp" android:background="#CC0001" />
+
+        <!-- AUTHOR CARD -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_margin="12dp">
+
+            <!-- Section label -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="36dp"
+                android:gravity="center_vertical" android:background="#003087"
+                android:paddingStart="14dp" android:paddingEnd="14dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="👨‍💻  Maklumat Pembangun"
+                    android:textColor="#FFD100" android:textSize="12sp" android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:cardCornerRadius="0dp"
+                app:cardElevation="2dp" app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+
+                    <!-- Avatar + Name -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical"
+                        android:layout_marginBottom="16dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginEnd="14dp"
+                            android:src="@drawable/profile"
+                            android:scaleType="centerCrop" />
+
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:id="@+id/tv_author_name"
+                                android:text="Muhammad Aiman Bin Mohd Nazri"
+                                android:textColor="#1A1A1A" android:textSize="14sp" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Pembangun Aplikasi"
+                                android:textColor="#888888" android:textSize="11sp" android:layout_marginTop="2dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Divider -->
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="#F0F0F0" android:layout_marginBottom="12dp" />
+
+                    <!-- Student ID row -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical"
+                        android:layout_marginBottom="10dp">
+                        <LinearLayout android:layout_width="32dp" android:layout_height="32dp"
+                            android:background="#E8EAF6" android:gravity="center"
+                            android:layout_marginEnd="12dp">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="🎓" android:textSize="14sp" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Student ID"
+                                android:textColor="#888888" android:textSize="10sp" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:id="@+id/tv_matric"
+                                android:text="2025158881"
+                                android:textColor="#1A1A1A" android:textSize="13sp" android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Course row -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical">
+                        <LinearLayout android:layout_width="32dp" android:layout_height="32dp"
+                            android:background="#E8EAF6" android:gravity="center"
+                            android:layout_marginEnd="12dp">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="📱" android:textSize="14sp" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Kursus"
+                                android:textColor="#888888" android:textSize="10sp" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:id="@+id/tv_course"
+                                android:text="ICT602 - Mobile Technology and Development"
+                                android:textColor="#1A1A1A" android:textSize="13sp" android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- GITHUB CARD -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp" android:layout_marginBottom="12dp">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="36dp"
+                android:gravity="center_vertical" android:background="#CC0001"
+                android:paddingStart="14dp" android:paddingEnd="14dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🔗  Source Code"
+                    android:textColor="#FFFFFF" android:textSize="12sp" android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:cardCornerRadius="0dp"
+                app:cardElevation="2dp" app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+
+                    <!-- GitHub URL -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical"
+                        android:background="#F5F5F5" android:padding="12dp"
+                        android:layout_marginBottom="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="🐙  " android:textSize="16sp" />
+                        <TextView android:id="@+id/tv_github_url"
+                            android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="https://github.com/AimanNazri727/SmartPetrolCalculator"
+                            android:textColor="#003087" android:textSize="11sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- GitHub Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_github"
+                        style="@style/Widget.App.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:text="Buka GitHub Repository"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- API CREDIT CARD -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp" android:layout_marginBottom="12dp">
+
+            <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:cardCornerRadius="0dp"
+                app:cardElevation="2dp" app:cardBackgroundColor="#E8EAF6">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:padding="14dp"
+                    android:gravity="center_vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="📡  " android:textSize="20sp" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Data Sumber"
+                            android:textColor="#003087" android:textSize="11sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Harga minyak dari Malaysia Open Data API"
+                            android:textColor="#555555" android:textSize="11sp" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="api.data.gov.my"
+                            android:textColor="#CC0001" android:textSize="11sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- COPYRIGHT -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp" android:layout_marginBottom="80dp">
+
+            <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:cardCornerRadius="0dp"
+                app:cardElevation="2dp" app:cardBackgroundColor="#003087">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:gravity="center"
+                    android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="© 2026 Developed by Aiman Nazri"
+                        android:textColor="#FFD100" android:textSize="13sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="All Rights Reserved."
+                        android:textColor="#AAAACC" android:textSize="11sp" android:layout_marginTop="2dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

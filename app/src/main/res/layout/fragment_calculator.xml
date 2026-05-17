@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F2F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#003087"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⛽"
+                android:textSize="36sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kalkulator Kos Petrol"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dengan Rebat BUDI MADANI"
+                android:textColor="#FFD100"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="5dp" android:background="#FFD100" />
+        <View android:layout_width="match_parent" android:layout_height="3dp" android:background="#CC0001" />
+
+        <!-- HARGA SEMASA CARDS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📊  Harga Minyak Semasa"
+                android:textColor="#003087"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- RON95 Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#CC0001">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RON95"
+                            android:textColor="#FFD100"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tv_bar_ron95"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RM-.--"
+                            android:textColor="#FFFFFF"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="2dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/ liter"
+                            android:textColor="#FFCCCC"
+                            android:textSize="10sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="#99000000"
+                            android:paddingStart="6dp"
+                            android:paddingEnd="6dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:layout_marginTop="6dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="BUDI: RM1.99/L"
+                                android:textColor="#FFD100"
+                                android:textSize="9sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- RON97 Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#003087">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RON97"
+                            android:textColor="#FFD100"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tv_bar_ron97"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RM-.--"
+                            android:textColor="#FFFFFF"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="2dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/ liter"
+                            android:textColor="#AAAAEE"
+                            android:textSize="10sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="#33FFFFFF"
+                            android:paddingStart="6dp"
+                            android:paddingEnd="6dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:layout_marginTop="6dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tiada subsidi BUDI"
+                                android:textColor="#CCCCFF"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Diesel Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#1B5E20">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DIESEL"
+                            android:textColor="#FFD100"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tv_bar_diesel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RM-.--"
+                            android:textColor="#FFFFFF"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="2dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/ liter"
+                            android:textColor="#AACCAA"
+                            android:textSize="10sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="#33FFFFFF"
+                            android:paddingStart="6dp"
+                            android:paddingEnd="6dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:layout_marginTop="6dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tiada subsidi BUDI"
+                                android:textColor="#CCFFCC"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- BUDI Toggle -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp" android:layout_marginBottom="12dp">
+            <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:cardCornerRadius="10dp"
+                app:cardElevation="3dp" app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:background="#E8EAF6" android:padding="14dp">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Saya layak BUDI MADANI"
+                            android:textColor="#003087" android:textSize="14sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Aktifkan untuk rebat RM1.99/liter (RON95 sahaja)"
+                            android:textColor="#555555" android:textSize="11sp" android:layout_marginTop="2dp" />
+                    </LinearLayout>
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switch_budi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:thumbTint="@color/switch_thumb_color"
+                        app:trackTint="@color/switch_track_color" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Input Card -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp" android:layout_marginBottom="12dp">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="36dp"
+                android:gravity="center_vertical" android:background="#003087"
+                android:paddingStart="14dp" android:paddingEnd="14dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Maklumat Pengiraan"
+                    android:textColor="#FFD100" android:textSize="12sp" android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:cardCornerRadius="0dp"
+                app:cardElevation="2dp" app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="14dp">
+
+                    <!-- Petrol Type + Price side by side -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_marginBottom="12dp">
+
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical" android:layout_marginEnd="8dp">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Jenis Petrol" android:textColor="#003087"
+                                android:textSize="12sp" android:textStyle="bold" android:layout_marginBottom="5dp" />
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent" android:layout_height="wrap_content"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                                app:boxStrokeColor="#CC0001" app:hintTextColor="#CC0001">
+                                <AutoCompleteTextView android:id="@+id/spinner_petrol_type"
+                                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                                    android:inputType="none" android:padding="12dp" android:textSize="14sp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical">
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                                android:orientation="horizontal" android:gravity="center_vertical"
+                                android:layout_marginBottom="5dp">
+                                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                    android:layout_weight="1" android:text="Harga/Liter (RM)"
+                                    android:textColor="#003087" android:textSize="12sp" android:textStyle="bold" />
+                                <TextView android:id="@+id/tv_price_source"
+                                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="📡 API" android:textColor="#2E7D32" android:textSize="9sp" />
+                            </LinearLayout>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/til_price"
+                                android:layout_width="match_parent" android:layout_height="wrap_content"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                app:boxStrokeColor="#CC0001" app:hintTextColor="#CC0001">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/et_price"
+                                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" android:padding="12dp"
+                                    android:hint="0.00" android:textSize="14sp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Fuel Usage -->
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Penggunaan Bahan Api (Liter)"
+                        android:textColor="#003087" android:textSize="12sp" android:textStyle="bold"
+                        android:layout_marginBottom="5dp" />
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_usage"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        app:boxStrokeColor="#CC0001" app:hintTextColor="#CC0001">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_usage"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:inputType="numberDecimal" android:padding="12dp"
+                            android:hint="cth: 40 liter" android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Buttons -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_reset" style="@style/Widget.App.Button.Outline"
+                            android:layout_width="0dp" android:layout_height="48dp"
+                            android:layout_weight="1" android:layout_marginEnd="8dp"
+                            android:text="Reset" android:textSize="13sp" />
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_calculate" style="@style/Widget.App.Button"
+                            android:layout_width="0dp" android:layout_height="48dp"
+                            android:layout_weight="2" android:text="Kira Sekarang"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- RESULT SECTION -->
+        <LinearLayout android:id="@+id/layout_result_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="80dp"
+            android:visibility="gone">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="36dp"
+                android:gravity="center_vertical" android:background="#CC0001"
+                android:paddingStart="14dp" android:paddingEnd="14dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="📊  Keputusan Pengiraan"
+                    android:textColor="#FFFFFF" android:textSize="12sp" android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:cardCornerRadius="0dp"
+                app:cardElevation="3dp" app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Summary bar: Type | Usage | Price -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:background="#F5F5F5" android:padding="12dp">
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical" android:gravity="center_horizontal">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Jenis" android:textColor="#888888" android:textSize="10sp" />
+                            <TextView android:id="@+id/tv_summary_type"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="RON95" android:textColor="#CC0001"
+                                android:textSize="14sp" android:textStyle="bold" />
+                        </LinearLayout>
+                        <View android:layout_width="1dp" android:layout_height="match_parent"
+                            android:background="#E0E0E0" />
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical" android:gravity="center_horizontal">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Penggunaan" android:textColor="#888888" android:textSize="10sp" />
+                            <TextView android:id="@+id/tv_summary_usage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0 liter"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <View android:layout_width="1dp" android:layout_height="match_parent"
+                            android:background="#E0E0E0" />
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical" android:gravity="center_horizontal">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Harga/Liter" android:textColor="#888888" android:textSize="10sp" />
+                            <TextView android:id="@+id/tv_summary_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="RM0.00"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Formula -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center"
+                        android:background="#FAFAFA" android:padding="10dp">
+                        <TextView android:id="@+id/tv_formula"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="0L × RM0.00 = RM0.00"
+                            android:textColor="#888888" android:textSize="12sp"
+                            android:fontFamily="monospace" />
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="#EEEEEE" />
+
+                    <!-- Kos Petrol row -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:padding="16dp"
+                        android:gravity="center_vertical">
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="💰  Kos Petrol"
+                                android:textColor="#003087" android:textSize="13sp" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Liter × Harga/Liter"
+                                android:textColor="#888888" android:textSize="10sp" android:layout_marginTop="2dp" />
+                        </LinearLayout>
+                        <TextView android:id="@+id/tv_total_cost"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="RM 0.00"
+                            android:textColor="#003087" android:textSize="20sp" android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="#EEEEEE" android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp" />
+
+                    <!-- Rebat BUDI row (hidden jika tak layak) -->
+                    <LinearLayout android:id="@+id/row_budi"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:padding="16dp"
+                        android:background="#FFF3E0" android:gravity="center_vertical"
+                        android:visibility="gone">
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="🎁  Rebat BUDI MADANI"
+                                android:textColor="#E65100" android:textSize="13sp" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Liter × RM1.99/liter"
+                                android:textColor="#888888" android:textSize="10sp" android:layout_marginTop="2dp" />
+                        </LinearLayout>
+                        <TextView android:id="@+id/tv_budi_rebate"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="RM 0.00"
+                            android:textColor="#F57F17" android:textSize="20sp" android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- Penjimatan row (hidden jika tak layak) -->
+                    <LinearLayout android:id="@+id/row_saving"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:padding="16dp"
+                        android:background="#E8F5E9" android:gravity="center_vertical"
+                        android:visibility="gone">
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="✅  Jumlah Penjimatan"
+                                android:textColor="#2E7D32" android:textSize="13sp" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Kos Petrol − Rebat BUDI"
+                                android:textColor="#888888" android:textSize="10sp" android:layout_marginTop="2dp" />
+                        </LinearLayout>
+                        <TextView android:id="@+id/tv_total_saving"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="RM 0.00"
+                            android:textColor="#2E7D32" android:textSize="20sp" android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="#DDDDDD" />
+
+                    <!-- Final Payable -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:background="#003087"
+                        android:padding="16dp" android:gravity="center_vertical">
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="JUMLAH PERLU DIBAYAR"
+                                android:textColor="#FFD100" android:textSize="11sp" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Selepas potongan subsidi BUDI"
+                                android:textColor="#AAAACC" android:textSize="10sp" android:layout_marginTop="2dp" />
+                        </LinearLayout>
+                        <TextView android:id="@+id/tv_final_payable"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="RM 0.00"
+                            android:textColor="#FFFFFF" android:textSize="28sp" android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

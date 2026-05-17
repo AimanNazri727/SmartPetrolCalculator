@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F2F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER: LOGO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#003087"
+            android:gravity="center"
+            android:paddingTop="24dp"
+            android:paddingBottom="20dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:layout_width="220dp"
+                android:layout_height="90dp"
+                android:src="@drawable/logo_budi_madani"
+                android:scaleType="fitCenter"
+                android:contentDescription="Logo BUDI MADANI" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Kalkulator Kos Petrol &amp; Subsidi BUDI"
+                android:textColor="#FFD100"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="5dp" android:background="#FFD100" />
+        <View android:layout_width="match_parent" android:layout_height="3dp" android:background="#CC0001" />
+
+        <!-- SYARAT KELAYAKAN -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_margin="12dp">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                android:orientation="horizontal" android:gravity="center_vertical"
+                android:background="#003087" android:paddingStart="14dp" android:paddingEnd="14dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Syarat Kelayakan BUDI MADANI"
+                    android:textColor="#FFD100" android:textSize="13sp" android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:cardCornerRadius="0dp"
+                app:cardElevation="2dp" app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="14dp">
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Semua warganegara Malaysia dengan lesen memandu aktif layak, iaitu:"
+                        android:textColor="#1A1A1A" android:textSize="12sp" android:lineSpacingExtra="3dp"
+                        android:layout_marginBottom="10dp" />
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="a.  Mempunyai lesen memandu aktif:"
+                        android:textColor="#003087" android:textSize="12sp" android:textStyle="bold"
+                        android:layout_marginBottom="6dp" />
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_marginBottom="4dp" android:paddingStart="12dp">
+                        <View android:layout_width="6dp" android:layout_height="6dp"
+                            android:layout_marginTop="5dp" android:layout_marginEnd="8dp" android:background="#CC0001" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Lesen Memandu Kompeten (CDL) — Kelas A, A1, B, B1, B2, C, D dan DA"
+                            android:textColor="#444444" android:textSize="11sp" android:lineSpacingExtra="2dp" />
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_marginBottom="4dp" android:paddingStart="12dp">
+                        <View android:layout_width="6dp" android:layout_height="6dp"
+                            android:layout_marginTop="5dp" android:layout_marginEnd="8dp" android:background="#CC0001" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Lesen Memandu Percubaan (PDL) — Kelas A, A1, B, B1, B2, C, D dan DA"
+                            android:textColor="#444444" android:textSize="11sp" android:lineSpacingExtra="2dp" />
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_marginBottom="10dp" android:paddingStart="12dp">
+                        <View android:layout_width="6dp" android:layout_height="6dp"
+                            android:layout_marginTop="5dp" android:layout_marginEnd="8dp" android:background="#CC0001" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Lesen Belajar Memandu (LDL) — Kelas A, B, B1, B2 dan C"
+                            android:textColor="#444444" android:textSize="11sp" android:lineSpacingExtra="2dp" />
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="10dp">
+                        <View android:layout_width="0dp" android:layout_height="1dp"
+                            android:layout_weight="1" android:background="#E0E0E0" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="  DAN  " android:textColor="#003087" android:textSize="11sp" android:textStyle="bold" />
+                        <View android:layout_width="0dp" android:layout_height="1dp"
+                            android:layout_weight="1" android:background="#E0E0E0" />
+                    </LinearLayout>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="b.  Pemegang Kad Pengenalan warganegara Malaysia"
+                        android:textColor="#003087" android:textSize="12sp" android:textStyle="bold"
+                        android:layout_marginBottom="10dp" />
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:background="#FFF8E1" android:padding="10dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="⚠  " android:textSize="13sp" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Rebat BUDI MADANI (RM1.99/liter) hanya untuk RON95 sahaja"
+                            android:textColor="#795548" android:textSize="11sp" android:lineSpacingExtra="2dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- HARGA MINYAK LINE CHART -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp" android:layout_marginBottom="80dp">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                android:orientation="horizontal" android:gravity="center_vertical"
+                android:background="#CC0001" android:paddingStart="14dp" android:paddingEnd="14dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Harga Minyak Terkini"
+                    android:textColor="#FFFFFF" android:textSize="13sp" android:textStyle="bold" />
+                <TextView android:id="@+id/tv_chart_date" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="8 minggu terkini"
+                    android:textColor="#FFD100" android:textSize="11sp" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:cardCornerRadius="0dp"
+                app:cardElevation="2dp" app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="12dp">
+
+                    <LinearLayout android:id="@+id/layout_chart_loading" android:layout_width="match_parent"
+                        android:layout_height="200dp" android:gravity="center" android:orientation="vertical">
+                        <ProgressBar android:layout_width="40dp" android:layout_height="40dp"
+                            android:indeterminate="true" android:indeterminateTint="#003087" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp" android:text="Memuatkan harga minyak..."
+                            android:textColor="#888888" android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/layout_chart_legend" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:gravity="center" android:layout_marginBottom="4dp" android:visibility="gone">
+                        <View android:layout_width="20dp" android:layout_height="3dp"
+                            android:background="#CC0001" android:layout_marginEnd="4dp" android:layout_gravity="center_vertical" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="RON95" android:textSize="11sp" android:textColor="#CC0001"
+                            android:textStyle="bold" android:layout_marginEnd="14dp" />
+                        <View android:layout_width="20dp" android:layout_height="3dp"
+                            android:background="#003087" android:layout_marginEnd="4dp" android:layout_gravity="center_vertical" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="RON97" android:textSize="11sp" android:textColor="#003087"
+                            android:textStyle="bold" android:layout_marginEnd="14dp" />
+                        <View android:layout_width="20dp" android:layout_height="3dp"
+                            android:background="#2E7D32" android:layout_marginEnd="4dp" android:layout_gravity="center_vertical" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Diesel" android:textSize="11sp" android:textColor="#2E7D32"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <com.example.smartpetrolcalculator.ui.home.LineChartView
+                        android:id="@+id/line_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:visibility="gone" />
+
+                    <LinearLayout android:id="@+id/layout_price_pills" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:orientation="horizontal"
+                        android:layout_marginTop="10dp" android:visibility="gone">
+
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical" android:gravity="center"
+                            android:background="#FFEBEE" android:padding="10dp" android:layout_marginEnd="4dp">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="RON95" android:textColor="#CC0001" android:textSize="11sp" android:textStyle="bold" />
+                            <TextView android:id="@+id/tv_pill_ron95" android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:text="RM --.--"
+                                android:textColor="#CC0001" android:textSize="18sp" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="/ liter" android:textColor="#CC0001" android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical" android:gravity="center"
+                            android:background="#E8EAF6" android:padding="10dp" android:layout_marginEnd="4dp">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="RON97" android:textColor="#003087" android:textSize="11sp" android:textStyle="bold" />
+                            <TextView android:id="@+id/tv_pill_ron97" android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:text="RM --.--"
+                                android:textColor="#003087" android:textSize="18sp" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="/ liter" android:textColor="#003087" android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:orientation="vertical" android:gravity="center"
+                            android:background="#E8F5E9" android:padding="10dp">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="Diesel" android:textColor="#2E7D32" android:textSize="11sp" android:textStyle="bold" />
+                            <TextView android:id="@+id/tv_pill_diesel" android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" android:text="RM --.--"
+                                android:textColor="#2E7D32" android:textSize="18sp" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="/ liter" android:textColor="#2E7D32" android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView android:id="@+id/tv_chart_error" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:gravity="center" android:padding="16dp"
+                        android:text="Gagal memuatkan data. Semak sambungan internet."
+                        android:textColor="#CC0001" android:textSize="12sp" android:visibility="gone" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

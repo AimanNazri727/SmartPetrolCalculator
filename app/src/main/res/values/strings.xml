@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smart Petrol Calculator</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_about">About</string>
+    <string name="error_fill_all">Please fill in all fields</string>
+    <string name="error_invalid_price">Please enter a valid price</string>
+    <string name="error_invalid_usage">Please enter valid fuel usage</string>
+    <string name="error_api">Failed to fetch price. Please enter manually.</string>
+    <string name="note_budi_ron95">* Nota: Rebat BUDI MADANI hanya terpakai untuk RON95.</string>
+</resources>

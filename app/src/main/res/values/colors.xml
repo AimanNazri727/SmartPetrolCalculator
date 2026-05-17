@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="malaysia_red">#CC0001</color>
+    <color name="malaysia_blue">#003087</color>
+    <color name="malaysia_yellow">#FFD100</color>
+    <color name="malaysia_white">#FFFFFF</color>
+    <color name="malaysia_red_dark">#990001</color>
+    <color name="malaysia_blue_dark">#002060</color>
+    <color name="malaysia_yellow_light">#FFE44D</color>
+    <color name="card_background">#F5F5F5</color>
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#555555</color>
+    <color name="surface_white">#FFFFFF</color>
+    <color name="divider_color">#E0E0E0</color>
+    <color name="success_green">#2E7D32</color>
+</resources>
